@@ -28,6 +28,7 @@ Reuniones de Google Hangouts con la siguiente agenda:
 ## Requisitos
 - Motivación
 - Actitud 
+- Entender inglés escrito y hablado
 - Instalar:
   * [Atom](https://atom.io/)
   * [Chrome](https://www.google.com/chrome/index.html)

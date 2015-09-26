@@ -29,7 +29,7 @@ Reuniones de Google Hangouts con la siguiente agenda:
 - Motivación
 - Actitud 
 - Instalar:
-⋅⋅* [Atom](https://atom.io/)
-⋅⋅* [Chrome](https://www.google.com/chrome/index.html)
-⋅⋅* [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-⋅⋅* [Firefox Web Developer Extension](https://addons.mozilla.org/en-US/firefox/addon/web-developer/)
+-- [Atom](https://atom.io/)
+-- [Chrome](https://www.google.com/chrome/index.html)
+-- [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+-- [Firefox Web Developer Extension](https://addons.mozilla.org/en-US/firefox/addon/web-developer/)

@@ -19,16 +19,17 @@ Aprender a usar tecnologías web y participar en la programathon 2016.
 - bootstrap
 - otros derivados y relacionados
 
-## Metodología 
+## Metodología
 Reuniones de Google Hangouts con la siguiente agenda:
 - Revisión de tareas previas por cada uno de los miembros
-- Exposición de temas nuevos 
+- Exposición de temas nuevos
 - Explicación de nuevas asignaciones
 
 ## Requisitos
 - Motivación
-- Actitud 
+- Actitud
 - Entender inglés escrito y hablado
+- Buen humor
 - Instalar:
   * [Atom](https://atom.io/)
   * [Chrome](https://www.google.com/chrome/index.html)

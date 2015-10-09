@@ -1,0 +1,17 @@
+
+UTF-8 como tabla de caracteres
+http://www.utf8-chartable.de/unicode-utf8-table.pl
+
+Tags iniciales:
+    html - define inicio y fin del documento
+    body - define inicio y fin de contenido 
+    h1..h6 - define titulos 
+    p - define parrafos
+    a href - un vinculo
+    hr - linea horizontal
+    img - referencia a una imagen 
+      atributos width, height
+    pre - define texto sin formato
+
+
+    

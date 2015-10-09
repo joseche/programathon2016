@@ -1,0 +1,28 @@
+<barrio>
+
+  <casa>
+    <cocina>
+      <refrigerador>frutas</refrigerador>
+    </cocina>
+
+    <cuarto>
+      <comoda>
+        <gabeta lado="izquierdo">
+          camisas
+        </gabeta>
+        <gabeta lado="derecho">
+          medias
+          <gabeta_secreta>
+            joyas
+          </gabeta_secreta>
+        </gabeta>
+      </comoda>
+    </cuarto>
+  </casa>
+
+  <casa numero=2>
+    <cuarto>Joel</cuarto>
+    <baño>Marco</baño>
+  </casa>
+
+</barrio>

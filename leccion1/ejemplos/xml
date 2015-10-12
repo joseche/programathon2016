@@ -1,3 +1,4 @@
+
 <barrio>
 
   <casa>
@@ -7,6 +8,9 @@
 
     <cuarto>
       <comoda>
+        <gabeta>
+          medias
+        </gabeta>
         <gabeta lado="izquierdo">
           camisas
         </gabeta>
@@ -24,5 +28,13 @@
     <cuarto>Joel</cuarto>
     <baño>Marco</baño>
   </casa>
+
+  <casa>
+    <cuarto>
+    </cuarto>
+  </casa>
+
+
+
 
 </barrio>

@@ -3,7 +3,7 @@
 Aquí llevaremos un registor de las actividades y materiales en preparación para la [Programathon 2016](https://www.programathon.cr/campeonato.html).
 
 ## Equipo
-- Marco Antonio | ramirezmarco97 at gmail.com
+- Marco Antonio | mramirez2697 at gmail.com
 - Joel Rodriguez | Joel.rc97 at gmail.com
 - Maria Paula Morera | rojas.morera at gmail.com
 - Alejandro Hidalgo | alejandrohh at gmail.com

@@ -14,10 +14,11 @@
   - extension de chrome
 
 Elementos HTML nuevos
-- em - para dar enfasis
+- em - para dar enfasis, italica
 - strong - para poner negrilla
 - code - cuando se ocupan letras q midan lo mismo, representar codigo
 - blockquote - citar a alguien
+- address
 - listas
   - ul - no numeradas
   - ol - numeradas

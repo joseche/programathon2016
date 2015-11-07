@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title>script tests</title>
+</head>
+<body>
+  <div id="location">
+    Your location will go here.
+  </div>
+
+  <div id="distance">
+    Distance from WickedlySmart HQ will go here.
+  </div>
+
+  <div id="map" style="width: 800px; height: 700px;"> </div>
+
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+  <script type="text/javascript">
+    window.onload = revisar_soporte();
+    var coords="";
+    var mapOptions = { zoom: 10,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var turrialba = {
+      latitude: 9.9051131,
+      longitude: -83.67548
+    };
+    var map;
+
+    function showMap(coords_) {
+      var googleLatandLong = new google.maps.LatLng(coords_.latitude, coords_.longitude );
+      var mapOptions = {
+        zoom: 10,
+        center: googleLatandLong,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var mapDiv = document.getElementById("map");
+      map = new google.maps.Map(mapDiv, mapOptions);
+    }
+
+    function revisar_soporte(){
+      if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(desplegar,error);
+      }else{
+        geodiv.innerHTML = "su browser no soporta geolocation";
+      }
+    }
+
+    function error(err) {
+      alert('ERROR(' + err.code + '): ' + err.message);
+    }
+
+    function computeDistance(startCoords, destCoords) {
+      var startLatRads = degreesToRadians(startCoords.latitude);
+      var startLongRads = degreesToRadians(startCoords.longitude);
+      var destLatRads = degreesToRadians(destCoords.latitude);
+      var destLongRads = degreesToRadians(destCoords.longitude);
+
+      var Radius = 6371; // radius of the Earth in km
+      var distance =
+        Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
+        Math.cos(startLatRads) * Math.cos(destLatRads) *
+        Math.cos(startLongRads - destLongRads)) * Radius;
+      return distance;
+    }
+
+    function degreesToRadians(degrees) {
+      var radians = (degrees * Math.PI)/180;
+      return radians;
+    }
+
+    function desplegar(posicion){
+      coords = posicion.coords;
+      var lat = posicion.coords.latitude;
+      var log = posicion.coords.longitude;
+      var acc = posicion.coords.accuracy;
+      var geodiv = document.getElementById('location');
+      geodiv.innerHTML = "ud esta en latitud: "+lat+", longitud: "+log+", con "+acc+" metros de exactitud";
+      var geodiv = document.getElementById('distance');
+      geodiv.innerHTML = "distancia hacia turrialba: "+computeDistance(coords, turrialba);
+      showMap(coords);
+    }
+
+  </script>
+
+</body>
+</html>

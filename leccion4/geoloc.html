@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title>script tests</title>
+</head>
+<body>
+  <div id="geoloc">
+    no ha cambiado nada
+  </div>
+
+  <script type="text/javascript">
+
+    window.onload = revisar_soporte();
+
+    function revisar_soporte(){
+      if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(desplegar,error);
+      }else{
+        geodiv.innerHTML = "su browser no soporta geolocation";
+      }
+    }
+
+    function error(err) {
+      alert('ERROR(' + err.code + '): ' + err.message);
+    };
+
+    function desplegar(posicion){
+
+      var lat = posicion.coords.latitude;
+      var log = posicion.coords.longitude;
+      var acc = posicion.coords.accuracy;
+
+      var geodiv = document.getElementById('geoloc');
+      geodiv.innerHTML = "ud esta en latitud: "+lat+", longitud: "+log+", con "+acc+" metros de exactitud";
+    }
+
+  </script>
+
+</body>
+</html>

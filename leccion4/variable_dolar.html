@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title>script tests</title>
+</head>
+<body>
+
+  <div id="registro_atletas">
+    <input id="atleta"><button onclick="addAtleta()">Agregar</button>
+  </div>
+
+  <script type="text/javascript">
+
+    var divatletas = document.getElementById('registro_atletas');
+    var newul = document.createElement("ul");
+    newul.id = 'ul_lista';
+
+    divatletas.appendChild(newul);
+
+    var ids = 0;
+
+    function addAtleta(){
+      var campoTexto = document.getElementById('atleta');
+      var newAtleta = campoTexto.value;
+      if (newAtleta.length>0){
+        var newli = document.createElement('li');
+        newli.innerHTML = newAtleta;
+        newli.id = ids++;
+        newul.appendChild(newli);
+        campoTexto.value="";
+      }
+    }
+
+  </script>
+
+</body>
+</html>
